@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
+
+@media (max-width: 1019px) {
+    
+}
+
+@media(max-width: 987px) {
+
+   #editar {
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 3px;
+   }
+   
+   #excluir {
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+   }
+
+   .acao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   }
+}
+
+@media (max-width: 690px) {
+    .modal-content {
+        width: 500px !important;
+        min-width: 200px !important;
+        height: 400px !important;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #modal-form {
+        justify-content: center !important;
+    }
+
+    .modal-footer {
+        justify-content: center !important;
+        margin-right: 0 !important;
+        margin-bottom: 15px;
+    }
+}
+
+@media(max-width: 670px) {
+    main {
+        height: 60vh !important;
+    }
+}
+
+@media(max-width: 640px) {
+    #cadastrarCliente {
+        left: 50% !important;
+        transform: translate(-50%, 0%) !important;
+    }
+
+    main {
+        overflow-x: scroll !important;
+    }
+}
+
+@media(max-width: 460px) {
+    header h1 {
+        font-size: 30px !important;
+    }
+}
+
+@media(max-width: 330px) {
+    header h1 {
+        font-size: 25px !important;
+    }
+}
+
+@font-face {
+	font-family: 'Merriweather', serif;    
+    src: url(https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+
+    overflow: hidden;
+    position: relative;
+}
+
+header {
+    background-image: linear-gradient(75deg, #400bdd 30%, #231157 90%);
+    height: 75px;
+}
+
+
+
+header > h1 {
+    color: white;
+    text-align: center;
+    line-height: 75px;
+	font-family: 'Merriweather', serif;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+#cadastrarCliente {
+    padding: 15px;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+	font-family: 'Merriweather', serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    background-color: #3B44F6;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    
+}
+
+#cadastrarCliente:hover {
+    background-color: #541690;
+}
+
+main {
+    width: 90vw;
+    height: 400px;
+    box-shadow: 3px 3px 10px rgb(194, 192, 192);
+    border-radius: 8px;
+
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+
+main table {
+    width: 98%;
+    position: absolute;
+    top: 2%;
+    left: 1%;
+
+}
+
+
+.linha-top {
+    background-color: #3E00FF;
+    color: white;
+	font-family: 'Merriweather', serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+main table td {
+    padding: 10px;
+    text-align: center;
+	font-family: 'Merriweather', serif;
+}
+
+main table td button {
+    padding: 10px;
+    border: none;
+    outline: none;
+	font-family: 'Merriweather', serif;
+    font-size: 15px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+
+}
+
+#editar {
+    background-color: #06FF00;
+}
+
+#excluir {
+    background-color: #FF1700;
+}
+
+
+ .modal {
+    background-color: #00000090;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    opacity: 0;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.modal-content {
+    width: 50%;
+    max-width: 670px;
+    min-width: 670px;
+    height: 20%;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    height: 250px;
+
+}
+
+.modal-content header {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-image: linear-gradient(75deg, #3811af 30%, #734aec 90%);
+	font-family: 'Merriweather', serif;
+    color: white;
+    text-transform: uppercase;
+    user-select: none;
+   
+}
+
+.modal-content span {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 100%;
+    text-align: center;
+    font-size: 20px;
+    user-select: none;
+
+    cursor: pointer;
+}
+
+.modal-content span:hover {
+    background-color: red;
+    color: white;
+}
+
+#modal-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    width: 100%;
+    height: 60%;
+}
+
+.inp-dados {
+    padding: 15px;
+    outline: none;
+    border: 1px solid rgb(202, 198, 198);
+    width: 300px;
+}
+
+.modal-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+#salvar {
+    padding: 8px;
+    border: none;
+    background-color: #06FF00;
+	font-family: 'Merriweather', serif;
+    color: white;
+    border-radius: 8px;
+    margin-right: 5px;
+    cursor: pointer;
+
+}
+
+#cancelar {
+    padding: 8px;
+    border: none;
+    background-color: #FF1700;
+    cursor: pointer;
+	font-family: 'Merriweather', serif;
+    color: white;
+    border-radius: 8px;
+}

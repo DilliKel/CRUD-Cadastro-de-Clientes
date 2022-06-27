@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>Test CRUD</title>
+    <link rel="icon" href="./src/images/icon.png">
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Clientes</h1>
+    </header>
+
+    <button id="cadastrarCliente">+ Cadastrar Clientes</button>
+
+    <main>
+
+        <table>
+            <thead>
+                <tr>
+                    <td class="linha-top">Nome</td>
+                    <td class="linha-top">E-mail</td>
+                    <td class="linha-top">Celular</td>
+                    <td class="linha-top">Cidade</td>
+                    <td class="linha-top acao" style="background-color: #F32424;">Ação</td>
+                </tr>
+            </thead>
+            <tbody id="corpo-tabela">
+                
+            </tbody>
+        </table>
+    </main>
+    
+    <div class="modal">
+        <div class="modal-content">
+            <header>
+                <h2>Novo Cliente</h1>
+                <span id="close">X</span>
+            </header>
+
+            <form id="modal-form">
+                <input type="text" id="nome" class="inp-dados" placeholder="Nome do cliente" data-new="new">
+
+                <input type="email" id="email" class="inp-dados" placeholder="E-mail do cliente">
+
+                <input type="text" id="numero" class="inp-dados" placeholder="Número do cliente">
+
+                <input type="text" id="cidade" class="inp-dados" placeholder="Cidade do cliente">
+
+            </form>
+
+            <footer class="modal-footer">
+                
+                <button id="salvar">Salvar</button>
+                <button id="cancelar">Cancelar</button>
+            </footer>
+        </div>
+    </div>
+
+    <script src="./src/js/script.js"></script>
+</body>
+</html>
