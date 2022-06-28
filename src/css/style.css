@@ -134,6 +134,7 @@ header > h1 {
 
 #cadastrarCliente:hover {
     background-color: #541690;
+    transition .5s;	
 }
 
 main {
@@ -183,7 +184,7 @@ main table td button {
     padding: 10px;
     border: none;
     outline: none;
-	font-family: 'Merriweather', serif;
+    font-family: 'Merriweather', serif;
     font-size: 15px;
     border-radius: 10px;
     color: white;
@@ -266,6 +267,7 @@ main table td button {
 .modal-content span:hover {
     background-color: red;
     color: white;
+    transition .5s;
 }
 
 #modal-form {
